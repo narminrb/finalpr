@@ -1,0 +1,124 @@
+#featured{
+  font-family: $base_font;
+  padding: 80px;
+  box-sizing: border-box;
+
+  .head-featured{
+    @include Flexible(center, center, column, wrap, 0);
+    margin-bottom: 30px;
+    h3{
+      font-size: 14px;
+      color: #a5a5a5;
+      margin-bottom: 10px;
+    }
+    h1{
+      font-size: 26px;
+      color: #242424;
+      line-height: 1.4;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    h2{
+      font-size: 16px;
+      color: #767676;
+    }
+  }
+  .furniture{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    &:hover h1{
+      bottom: 55px;
+    }
+    &:hover h2{
+      bottom: 30px;
+      opacity: 1;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s ease-in-out;
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+    h1{
+      position: absolute;
+      color: #333333;
+      text-transform: uppercase;
+      line-height: 1.4;
+      font-weight: 500;
+      font-size: 20px;
+      bottom: 20px;
+      left: 20px;
+      z-index: 100;
+      transition: 0.3s ease-in-out;
+    }
+    h2{
+      position: absolute;
+      color: #a5a5a5;
+      font-size: 13px;
+      bottom: 0;
+      left: 20px;
+      z-index: 100;
+      transition: 0.5s ease;
+      opacity: 0;
+    }
+  }
+
+.first-col {
+  margin-bottom: 25px; 
+}
+
+  .category{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    &:hover h1{
+      bottom: 50px;
+    }
+    &:hover h2{
+      bottom: 25px;
+      opacity: 1;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      object-fit: cover;
+      transition: 0.5s ease-in-out;
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+    h1{
+      position: absolute;
+      color: #333333;
+      text-transform: uppercase;
+      line-height: 1.4;
+      font-weight: 500;
+      font-size: 20px;
+      bottom: 20px;
+      left: 20px;
+      z-index: 100;
+      transition: 0.3s ease-in-out;
+    }
+    h2{
+      position: absolute;
+      color: #a5a5a5;
+      font-size: 13px;
+      bottom: 0;
+      left: 20px;
+      z-index: 100;
+      transition: 0.4s ease;
+      opacity: 0;
+    }
+  }
+
+
+    
+  
+}

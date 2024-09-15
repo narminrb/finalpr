@@ -1,0 +1,160 @@
+#secondslider {
+  font-family: $base_font;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   
+   .container-fluid, .row {
+     padding: 0; 
+     margin: 0;  
+ }
+ 
+ .carousel-item {
+     height: 65vh;
+     width: 100%; 
+     overflow: hidden; 
+     cursor: pointer;
+     position: relative; 
+ }
+
+ .first-slide-content {
+  @include Flexible(center, center, row, wrap, 15px);
+  background-color: #7ab532;
+     height: 100%;
+     width: 100%; 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 100px;
+     position: relative;
+     h3{
+      @include Flexible(center, center, row, wrap, 15px);
+      text-align: center;
+      opacity: 0.1;
+      font-weight: 700;
+      font-size: 230px;
+      z-index: 1;
+      position: absolute; 
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+      color: white; 
+     }
+ }
+
+ .left-content, .right-content {
+   margin-top: 20px;
+   text-align: left;
+ }
+ 
+ .categories{
+  @include Flexible(flex-start, center, row, wrap, 15px);
+  margin-top: 20px;
+  hr{
+    color: white;
+  }
+  h6{
+    font-style: italic;
+    color:#E6F2D7;
+  }
+  h5{
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+  }
+ }
+
+ 
+
+ .right-content img {
+     max-width: 100%; 
+     height: 450px;
+     object-fit: cover;
+     display: block;
+     z-index: 2;
+     position: relative;
+ }
+
+ .carousel-indicators button {
+     background-color: #fff;
+ }
+
+ .carousel-control-prev, .carousel-control-next {
+     filter: invert(1); 
+ }
+
+
+ html, body {
+     overflow-x: hidden; 
+ }
+ 
+ .left2-content h2{
+   font-size: 28px;
+   color: #83B735;
+   font-family: Lato;
+
+ }
+ .left2-content h1 {
+     color: #fff;
+     font-size: 50px;
+     font-weight: 600;
+     line-height: 1.2; 
+     margin-bottom: 10px; 
+     padding: 0;
+     text-align: left;
+ }
+ .left2-content h4{
+   text-align: left;
+   margin-bottom: 10px;
+   text-transform: uppercase;
+   color: rgba(255, 255, 255, 0.8);
+   font-weight: 600;
+ }
+ .left2-content {
+
+ .bot-part{
+  @include Flexible(flex-start, center, row, wrap, 30px);
+  margin-top: 30px;
+  h2{
+   text-align: left;
+   color: #fff;
+   font-size: 35px;
+  }
+  button{
+    outline: none;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #BDDA99;
+    padding: 12px 17px;
+    color: #fff;
+    font-size: 14px;
+    z-index: 10; 
+    transition: 0.3s ease-in-out;
+   
+    &:hover {
+      border-color: white;
+      color: #fff; 
+    }
+  }
+ }
+
+ }
+ 
+ .carousel-indicators button {
+   width: 8px; 
+   height: 8px; 
+   border-radius: 50%;
+   background-color: transparent;
+   border :2px solid white;
+   margin: 0 5px; 
+   opacity: 0.5; 
+}
+
+.carousel-indicators .active {
+   background-color: #fff; 
+   opacity: 1; 
+}
+
+}

@@ -1,0 +1,62 @@
+#woodmart{
+  font-family: $base_font;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+  box-sizing: border-box;
+  height: 400px;
+  background-image: url("https://woodmart.b-cdn.net/wp-content/uploads/2015/12/about-us2-2.jpg?id=9082");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  .woodmart{
+    padding-left: 9% !important;
+    box-sizing: border-box;
+    @include Flexible(flex-start, flex-start, column, wrap, 15px);
+  
+    h1{
+      color: #767676;
+      font-size: 24px;
+      font-family: Lato;
+      line-height: 36px;
+    }
+    h2{
+      color: #242424;
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 500;
+    }
+    p{
+      color: #767676;
+      line-height: 1.4;
+      font-size: 16px;
+      font-family: Lato;
+    }
+    .buttons{
+      @include Flexible(flex-start, flex-start, row, wrap, 15px); 
+      .first{
+        padding: 13px 17px;
+        border: none;
+        background-color: #83b735;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        transition: 0.3s ease-in-out;
+        &:hover{
+          opacity: 0.8;
+        }
+      }   
+      .second{
+        padding: 11px 17px;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 500;
+        border:2px solid #cdcbcb;
+        outline: none;       
+        transition: 0.3s ease-in-out;
+        &:hover{
+          background-color: #cdcbcb;
+        }
+      }
+    }
+  }
+}

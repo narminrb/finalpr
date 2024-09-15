@@ -1,0 +1,22 @@
+#brands{
+  padding: 30px 0;
+  .eachbrand{
+    @include Flexible(center,center,row, wrap,10px);
+    padding: 30px 0;
+    width: 198px;
+    height: 100px;
+    cursor: pointer;
+    &:hover img{
+      opacity: 1;
+    }
+    img{
+     width: 108px;
+     height: 60px;
+      object-fit: cover;
+      opacity: 0.6;
+      transition: 0.3s ease-in-out;
+      
+    }
+
+  }
+}

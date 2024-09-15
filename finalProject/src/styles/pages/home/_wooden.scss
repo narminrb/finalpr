@@ -1,0 +1,37 @@
+#wooden {
+  font-family: $base_font;
+  margin: 0;
+  padding: 0;
+  height: 250px;
+  box-sizing: border-box;
+  display: flex;              
+  align-items: center;           
+  justify-content: center;       
+  background-image: url("https://woodmart.b-cdn.net/wp-content/uploads/2021/04/blog-title-bg-opt.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container-fluid, .row {
+    padding: 0;
+    margin: 0;
+  }
+
+  .wood-words {
+    @include Flexible(center, center, column, wrap, 0);
+
+    h1 {
+      text-align: center;
+      font-size: 68px;
+      font-weight: 600;
+      line-height: 1.4;
+      color: white;
+    }
+    h2{
+      color: white;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+}

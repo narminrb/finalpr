@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/style.css">
+</head>
+<body>
+
+  <header>
+    <nav id="topnav">
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-3 col-md-6 col-sm-12">
+          <div class="head-logo">
+            <img src="https://woodmart.b-cdn.net/wp-content/themes/woodmart/images/wood-logo-dark.svg" alt="headlogo">
+          </div>
+        </div>
+        <div class="col-xl-6 col-md-6 col-sm-12">
+          <div class="head-center">
+            <input type="text" placeholder="Search for products">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Select Category <i class="ri-arrow-down-s-line"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Clocks</a></li>
+                  <li><a class="dropdown-item" href="#">Lighting</a></li>
+                  <li><a class="dropdown-item" href="#">Furniture</a></li>
+                  <li><a class="dropdown-item" href="#">Accessories</a></li>
+                  <li><a class="dropdown-item" href="#">Cooking</a></li>
+                  <li><a class="dropdown-item" href="#">Toys</a></li>
+                  <li><a class="dropdown-item" href="#">Other</a></li>
+                </ul>
+              </div>
+            <button class="icon-but">
+              <i class="ri-search-line"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6 col-sm-12">
+          <div class="right-side">
+            <p>login <span>/</span> register</p>
+            <div class="icon-bar">
+              <i class="ri-heart-line"></i>
+              <i class="ri-shuffle-line"><span>o</span></i>
+              <i class="ri-shopping-bag-line"><span>o</span></i>
+            </div>
+            <h6>$0.00</h6>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    </nav>
+    <nav id="botnav">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-3 col-md-6 col-sm-12">
+              <div class="nav-left">
+                <div class="browser">
+                  <div class="left-part">
+                    <i class="ri-menu-line"></i>
+                  <p>Browse Categories</p>
+                  </div>
+                  <div class="right-icon">
+                    <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-6 col-sm-12">
+              <div class="nav-center">
+                <ul>
+                  <li class="home"><a href="#">Home<i class="ri-arrow-down-s-line"></i></a>
+                   <div class="container-fluid">
+                    <div class="home-dropdown">
+                      <div class="home-topdrop">
+                       <a href="./index.html">
+                        <div class="home-img">
+                          <img src="https://woodmart.b-cdn.net/wp-content/uploads/2024/06/demo-default-1.jpg.webp" alt="">
+                          <h1>Default</h1>
+                        </div>
+                       </a>
+                        <div class="home-img">
+                          <img src="https://woodmart.b-cdn.net/wp-content/uploads/2023/02/demo-mega-electronics.jpg.webp" alt="">
+                          <h1>Mega Electronics</h1>
+                        </div>
+                        <div class="home-img">
+                          <img src="https://woodmart.b-cdn.net/wp-content/uploads/2022/06/preview-megamarket.jpg.webp" alt="">
+                          <h1>Mega Market</h1>
+                        </div>
+                        <div class="home-img">
+                          <img src="https://woodmart.b-cdn.net/wp-content/uploads/2024/08/demo-vegetables.jpg.webp" alt="">
+                          <h1>Vegetables</h1>
+                        </div>
+                        <div class="home-img">
+                          <img src="https://woodmart.b-cdn.net/wp-content/uploads/2023/09/demo-furniture-2.jpg.webp" alt="">
+                          <h1>Furniture 2</h1>
+                        </div>
+                      </div>
+                      <div class="home-botdrop">
+                        <div class="home-img">
+                          <img src="https://woodmart.b-cdn.net/wp-content/uploads/2023/09/demo-games-white-1.jpg.webp" alt="">
+                          <h1>Games</h1>
+                        </div>
+                        <div class="home-img">
+                          <img src="https://woodmart.b-cdn.net/wp-content/uploads/2017/01/handmade.jpg" alt="">
+                          <h1>Handmade</h1>
+                        </div>
+                        <div class="home-img">
+                          <img src="https://woodmart.b-cdn.net/wp-content/uploads/2024/04/demo-fashion-color-1.jpg.webp" alt="">
+                          <h1>Fashion Color</h1>
+                        </div>
+                        <div class="home-img">
+                          <img src="https://woodmart.b-cdn.net/wp-content/uploads/2024/04/demo-glasses-1.jpg.webp" alt="">
+                          <h1>Glasses</h1>
+                        </div>
+                        <div class="home-img">
+                          <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/05/preview-retail-2.jpg.webp" alt="">
+                          <h1>Retail 2</h1>
+                        </div>
+                      </div>
+                      <div class="home-button">
+                        <button>VIEW ALL DEMOS (87)</button>
+                      </div>
+                    </div>
+                   </div>
+                  </li>
+                  <li><a href="#">Shop<i class="ri-arrow-down-s-line"></i></a></li>
+                  <li class="blog"><a href="#">Blog<i class="ri-arrow-down-s-line"></i></a>
+                    <div class="mega-box">
+                      <div class="content">
+                      <div class="main">
+                        <p>Blog Types</p>
+                        <ul class="mega-links">
+                          <li><a href="./alternative.html">Alternative</a></li>
+                          <li><a href="#">Alternative</a></li>
+                          <li><a href="#">Alternative</a></li>
+                          <li><a href="#">Alternative</a></li>
+                          <li><a href="#">Alternative</a></li>
+                          <li><a href="#">Alternative</a></li>
+                        </ul>
+                      </div>
+                      <div class="main">
+                        <p>Blog Types</p>
+                        <ul class="mega-links">
+                          <li><a href="#">Alternative</a></li>
+                          <li><a href="#">Alternative</a></li>
+                          <li><a href="#">Alternative</a></li>
+                          <li><a href="#">Alternative</a></li>
+                          <li><a href="#">Alternative</a></li>
+                          <li><a href="#">Alternative</a></li>
+                        </ul>
+                      </div>
+                        <div class="main1">
+                          <div class="recent">
+                            <h1>Recent Posts</h1>
+                            <div class="img">
+                              <img src="https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-12-75x65.jpg" alt="">
+                              <div class="words">
+                                <h2>
+                                  A companion for extra 
+                                  <br>
+                                  sleeping</h2>
+                                <p>July 23,2016 1 comment</p>
+                              </div>
+                            </div>
+                            <div class="img">
+                              <img src="https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-12-75x65.jpg" alt="">
+                              <div class="words">
+                                <h2>Outdoor seating 
+                                  <br>
+                                  collection inspiration</h2>
+                                <p>July 23,2016 1 comment</p>
+                              </div>
+                            </div>
+                            <div class="img">
+                              <img src="https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-12-75x65.jpg" alt="">
+                              <div class="words">
+                                <h2>Outdoor seating 
+                                  <br>
+                                  collection inspiration</h2>
+                                <p>July 23,2016 1 comment</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="pages"><a href="#">Pages<i class="ri-arrow-down-s-line"></i></a>
+                    <div class="page-menu">
+                      <ul>
+                        <li>
+                          <h1>Demo Layouts</h1>
+                        </li>
+                        <li>
+                          <p>Categories</p>
+                        </li>
+                        <li>
+                          <p>Basic</p>
+                        </li>
+                        <li>
+                          <p>Parallax</p>
+                        </li>
+                        <li>
+                          <p>Infinite Scrolling</p>
+                        </li>
+                        <li>
+                          <p>Boxed</p>
+                        </li>
+                        <li>
+                          <p>Grid</p>
+                        </li>
+                        <li>
+                          <p>Video</p>
+                        </li>
+                        <li>
+                          <p>Fullscreen</p>
+                        </li>
+                        <li>
+                          <p>Lookbook</p>
+                        </li>
+                        <li>
+                          <p>Landing</p>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                          <h1>Pre-built pages</h1>
+                        </li>
+                        <li>
+                          <a class="contact" href="./contact.html"><p>Contact Us#1</p></a>
+                        </li>
+                        <li>
+                          <p>Contact Us#2</p>
+                        </li>
+                        <li>
+                          <p>Contact Us#3</p>
+                        </li>
+                        <li>
+                          <p>Contact Us#4</p>
+                        </li>
+                        <li>
+                          <p>FAQs #1</p>
+                        </li>
+                        <li>
+                          <p>FAQs #2</p>
+                        </li>
+                        <li>
+                          <p>Our Team</p>
+                        </li>
+                        <li>
+                          <p>About Us#1</p>
+                        </li>
+                        <li>
+                          <p>About Us#2</p>
+                        </li>
+                        <li>
+                          <p>About Me</p>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                          <h1>Portfolio</h1>
+                        </li>
+                        <li>
+                          <p>Standard</p>
+                        </li>
+                        <li>
+                          <p>Alternative</p>
+                        </li>
+                        <li>
+                          <p>Text under image</p>
+                        </li>
+                        <li>
+                          <p>Hover parallax</p>
+                        </li>
+                        <li>
+                          <p>Portfolio fullwidth</p>
+                        </li>
+                        <li>
+                          <p>Infinite scrolling</p>
+                        </li>
+                        <li>
+                          <p>Single-sticky</p>
+                        </li>
+                        <li>
+                          <p>Single-alternative</p>
+                        </li>
+                        <li>
+                          <p>Single-gallery</p>
+                        </li>
+                        <li>
+                          <p>Single-video</p>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                          <h1>Headers</h1>
+                        </li>
+                        <li>
+                          <p>Advanced</p>
+                        </li>
+                        <li>
+                          <p>E-commerce</p>
+                        </li>
+                        <li>
+                          <p>Header-base</p>
+                        </li>
+                        <li>
+                          <p>Simplified</p>
+                        </li>
+                        <li>
+                          <p>Double menu</p>
+                        </li>
+                        <li>
+                          <p>Logo center</p>
+                        </li>
+                        <li>
+                          <p>With categories menu</p>
+                        </li>
+                        <li>
+                          <p>Menu in top bar</p>
+                        </li>
+                        <li>
+                          <p>Dark header</p>
+                        </li>
+                        <li>
+                          <p>Colored header</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="elements"><a href="#">Elements<i class="ri-arrow-down-s-line"></i></a>
+                    <div class="page-menu">
+                      <ul>
+                        <li>
+                          <h1>Demo Layouts</h1>
+                        </li>
+                        <li>
+                          <p>Categories</p>
+                        </li>
+                        <li>
+                          <p>Basic</p>
+                        </li>
+                        <li>
+                          <p>Parallax</p>
+                        </li>
+                        <li>
+                          <p>Infinite Scrolling</p>
+                        </li>
+                        <li>
+                          <p>Boxed</p>
+                        </li>
+                        <li>
+                          <p>Grid</p>
+                        </li>
+                        <li>
+                          <p>Video</p>
+                        </li>
+                        <li>
+                          <p>Fullscreen</p>
+                        </li>
+                        <li>
+                          <p>Lookbook</p>
+                        </li>
+                        <li>
+                          <p>Landing</p>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                          <h1>Pre-built pages</h1>
+                        </li>
+                        <li>
+                          <p>Contact Us#1</p>
+                        </li>
+                        <li>
+                          <p>Contact Us#2</p>
+                        </li>
+                        <li>
+                          <p>Contact Us#3</p>
+                        </li>
+                        <li>
+                          <p>Contact Us#4</p>
+                        </li>
+                        <li>
+                          <p>FAQs #1</p>
+                        </li>
+                        <li>
+                          <p>FAQs #2</p>
+                        </li>
+                        <li>
+                          <p>Our Team</p>
+                        </li>
+                        <li>
+                          <p>About Us#1</p>
+                        </li>
+                        <li>
+                          <p>About Us#2</p>
+                        </li>
+                        <li>
+                          <p>About Me</p>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                          <h1>Portfolio</h1>
+                        </li>
+                        <li>
+                          <p>Standard</p>
+                        </li>
+                        <li>
+                          <p>Alternative</p>
+                        </li>
+                        <li>
+                          <p>Text under image</p>
+                        </li>
+                        <li>
+                          <p>Hover parallax</p>
+                        </li>
+                        <li>
+                          <p>Portfolio fullwidth</p>
+                        </li>
+                        <li>
+                          <p>Infinite scrolling</p>
+                        </li>
+                        <li>
+                          <p>Single-sticky</p>
+                        </li>
+                        <li>
+                          <p>Single-alternative</p>
+                        </li>
+                        <li>
+                          <p>Single-gallery</p>
+                        </li>
+                        <li>
+                          <p>Single-video</p>
+                        </li>
+                      </ul>
+                      <ul>
+                        <li>
+                          <h1>Headers</h1>
+                        </li>
+                        <li>
+                          <p>Advanced</p>
+                        </li>
+                        <li>
+                          <p>E-commerce</p>
+                        </li>
+                        <li>
+                          <p>Header-base</p>
+                        </li>
+                        <li>
+                          <p>Simplified</p>
+                        </li>
+                        <li>
+                          <p>Double menu</p>
+                        </li>
+                        <li>
+                          <p>Logo center</p>
+                        </li>
+                        <li>
+                          <p>With categories menu</p>
+                        </li>
+                        <li>
+                          <p>Menu in top bar</p>
+                        </li>
+                        <li>
+                          <p>Dark header</p>
+                        </li>
+                        <li>
+                          <p>Colored header</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#">Buy</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12">
+              <div class="nav-right">
+                <div class="green-word">
+                  <p>Special offer</p>
+                </div>
+                <div class="purchase">
+                  <p>Purchase theme</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </nav>
+    </header>
+    <section id="map">
+      <div class="container-fluid g-0">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12234.360496206702!2d-75.140658!3d39.950557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c648ec5a4fb9%3A0x6615596e574ba065!2z0JHQu9GDINCa0YDQvtGB0YEg0KDQuNCy0LXRgNGA0LjQvdC6!5e0!3m2!1sru!2sus!4v1726385399016!5m2!1sru!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 col-md-6 col-sm-12">
+    <div class="left-part">
+      <div class="head">
+        <h2>INFORMATION QUESTIONS</h2>
+        <h1>FREQUENTLY ASKED QUESTIONS</h1>
+      </div>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Will i receive the same product that i see on the picture?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Consectetur cras scelerisque dis nec mi vestibulum ullamcorper turpis enim natoque tempus a malesuada suspendisse iaculis adipiscing himenaeos tincidunt.Tellus pharetra dis nostra urna a scelerisque id parturient ullamcorper ullamcorper class ad consectetur tristique et.
+            <br>
+            <br>
+              Hendrerit mollis facilisi odio a montes scelerisque a scelerisque justo a praesent conubia aenean mi tempor.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Where can I view my sales receipt?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              A vel dui a conubia vestibulum class varius vel nunc a gravida ut maecenas quisque a proin condimentum sagittis class at faucibus primis parturient dolor scelerisque himenaeos.
+              <br>
+              <br>
+
+              A et ullamcorper vestibulum netus a mauris ac consectetur libero volutpat congue congue turpis a consectetur adipiscing sit.Suspendisse leo fringilla a congue tempus nisi conubia vestibulum a in posuere accumsan.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              How can I return an item?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Sit rhoncus aptent dis scelerisque penatibus a dis tempor accumsan suspendisse mollis a et odio ullamcorper magnis ullamcorper cum ullamcorper duis nulla egestas massa.
+              <br>
+              <br>
+
+              Vitae amet nostra est leo dignissim justo sodales et ac a conubia bibendum duis ad justo suspendisse a a tellus cubilia vestibulum a dictumst a duis risus.Sociosqu curae consequat nisl litora a eros est consectetur nulla rhoncus a a id felis praesent.Tempus dui integer a cursus id fames parturient.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              Will you restock items indicated as "out of stock?"
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Scelerisque parturient sagittis nisi in aliquam dui scelerisque non consectetur aptent hac adipiscing ullamcorper pulvinar sit vestibulum purus facilisi hendrerit mus nisl massa ut parturient consectetur cum justo fames torquent.
+              <br>
+              <br>
+
+              Ac curae aliquet vivamus aptent duis congue urna venenatis ridiculus faucibus tincidunt a lorem rutrum nullam potenti adipiscing.Adipiscing.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+             Where can I ship my order?
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Ut bibendum a adipiscing purus massa a facilisi congue parturient condimentum urna donec per adipiscing cursus nisl nam tristique parturient id.
+              <br>
+              <br>
+              Aliquam quam at et in ipsum at venenatis a eget dignissim aliquam tincidunt ultrices lacus ad consectetur imperdiet sem suspendisse ante a dapibus potenti.Eu parturient parturient magnis tempus molestie augue quam vulputate hac facilisis est nisl pretium a cursus.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="col-xl-6 col-md-6 col-sm-12">
+        <div class="right-part">
+          <div class="head">
+            <h2>INFORMATION ABOUT US</h2>
+            <h1>CONTACT US FOR ANY QUESTIONS</h1>
+          </div>
+          <form>
+            <div class="top-form">
+              <div class="input-div">
+               <h4>Your Name</h4>
+                <input type="text">
+              </div>
+              <div class="input-div">
+                <h4>Your Email</h4>
+                <input type="email">
+              </div>
+            </div>
+            <div class="center-form">
+              <div class="input-div">
+                <h4>Phone Number</h4>
+                 <input type="text">
+               </div>
+               <div class="input-div">
+                 <h4>Company</h4>
+                 <input type="email">
+               </div>
+            </div>
+            <div class="bot-form">
+              <div class="bot-input-div">
+                <h4>Your Message</h4>
+                <textarea name="message" rows="10" cols="76"></textarea>
+              </div>
+              <div class="quest">
+                <button>
+                  Ask  a question
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+</section>
+<section id="brands">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-md-6 col-sm-12">
+        <div class="row">
+          <div class="col-xl-2 col-md-6 col-sm-12">
+            <div class="eachbrand">
+              <img src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/brand-witra.png" alt="">
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-6 col-sm-12">
+            <div class="eachbrand">
+              <img src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/brand-Rosenthal.png.webp" alt="">
+            </div>
+
+          </div>
+          <div class="col-xl-2 col-md-6 col-sm-12">
+            <div class="eachbrand">
+              <img src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/brand-PackIt.png" alt="">
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-6 col-sm-12">
+            <div class="eachbrand">
+              <img src="https://woodmart.b-cdn.net/wp-content/uploads/2017/01/nichemodern.png" alt="">
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-6 col-sm-12">
+            <div class="eachbrand">
+              <img src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/brand-Magisso.png" alt="">
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-6 col-sm-12">
+            <div class="eachbrand">
+              <img src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/brand-Louis-Poulsen.png.webp" alt="">
+            </div>
+          </div>
+            
+          </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-12 col-md-12">
+       <div class="row">
+       <div class="col-xl-6">
+        <div class="logcont">
+          <div class="logos">
+            <img src="https://woodmart.b-cdn.net/wp-content/themes/woodmart/images/wood-logo-dark.svg" alt="logo">
+          </div>
+          <div class="cont">
+            <ul>
+              <li><p>
+                Condimentum adipiscing vel neque dis nam
+              <br>
+              parturient orci at scelerisque neque dis nam
+              <br>
+              parturient.
+            </p>
+          </li>
+            </ul>
+            <div class="sum">
+              <div class="item">
+                <i class="ri-send-plane-fill"></i>
+                <p>451 Wall Street, UK, London</p>
+              </div>
+              <div class="item">
+                <i class="ri-smartphone-line"></i>
+                <p>Phone: (064) 332-1233</p>
+              </div>
+              <div class="item">
+                <i class="ri-mail-line"></i>
+                <p>Fax: (099) 453-1357</p>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+       </div>
+       <div class="col-xl-6">
+        <div class="recent">
+          <h1>Recent Posts</h1>
+          <div class="img">
+            <img src="https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-12-75x65.jpg" alt="">
+            <div class="words">
+              <h2>
+                A companion for extra 
+                <br>
+                sleeping</h2>
+              <p>July 23,2016 1 comment</p>
+            </div>
+          </div>
+          <div class="img">
+            <img src="https://woodmart.b-cdn.net/wp-content/uploads/2016/07/blog-11-75x65.jpg" alt="">
+            <div class="words">
+              <h2>Outdoor seating 
+                <br>
+                collection inspiration</h2>
+              <p>July 23,2016 1 comment</p>
+            </div>
+          </div>
+        </div>
+       </div>
+       </div>
+        </div>
+      <div class="col-lg-6 col-sm-12 col-md-12">
+        <div class="row">
+          <div class="col-xl-4 col-sm-12 col-md-6">
+            <div class="footwords">
+              <h1>OUR STORES</h1>
+              <h3>New York</h3>
+              <h3>London SF</h3>
+              <h3>Cockfosters BP</h3>
+              <h3>Los Angeles</h3>
+              <h3>Chicago</h3>
+              <h3>Las Vegas</h3>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-12 col-md-6">
+            <div class="footwords">
+              <h1>USEFUL LINKS</h1>
+              <h3>Privacy Policy</h3>
+              <h3>Returns</h3>
+              <h3>Terms & Conditions</h3>
+              <h3>Contact Us</h3>
+              <h3>Latest News</h3>
+              <h3>Our Sitemap</h3>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-12 col-md-6">
+            <div class="footwords">
+              <h1>FOOTER MENU</h1>
+              <h3>Instagram profile</h3>
+              <h3>New Collection</h3>
+              <h3>Woman Dress</h3>
+              <h3>Contact Us</h3>
+              <h3>Latest News</h3>
+              <h3>Our Sitemap</h3>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>

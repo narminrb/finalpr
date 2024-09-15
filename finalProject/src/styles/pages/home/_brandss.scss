@@ -1,0 +1,24 @@
+#brandss{
+  padding: 15px 0;
+  background-color: #F9F9F9;
+  .eachbrand{
+    @include Flexible(center,center,row, wrap,10px);
+    padding: 20px 0;
+    width: 198px;
+    height: 90px;
+    cursor: pointer;
+    &:hover img{
+      opacity: 1;
+    }
+    img{
+     width: 108px;
+     height: 60px;
+      object-fit: cover;
+      opacity: 0.6;
+      transition: 0.3s ease-in-out;
+      
+    }
+
+  }
+ 
+}

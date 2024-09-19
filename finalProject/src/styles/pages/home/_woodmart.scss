@@ -3,7 +3,7 @@
   padding-top: 100px !important;
   padding-bottom: 100px !important;
   box-sizing: border-box;
-  height: 400px;
+  min-height: 400px;
   background-image: url("https://woodmart.b-cdn.net/wp-content/uploads/2015/12/about-us2-2.jpg?id=9082");
   background-size: cover; 
   background-position: center; 
@@ -12,6 +12,7 @@
     padding-left: 9% !important;
     box-sizing: border-box;
     @include Flexible(flex-start, flex-start, column, wrap, 15px);
+    
   
     h1{
       color: #767676;
@@ -59,4 +60,10 @@
       }
     }
   }
+  @media (max-width: 768px) {
+    .woodmart {
+      width: 70%; 
+    }
+  }
+  
 }

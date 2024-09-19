@@ -2,11 +2,16 @@
   font-family: $base_font;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 .cont{
+  cursor: pointer;
   .top{
     @include Flexible(center, center, column,wrap,20px);
     margin-top: 40px;
     margin-bottom: 15px;
+    @media (max-width: 768px) {
+      height: auto; 
+    }
 
     .shop_btn {  
       background-color:   #83B735;
@@ -17,7 +22,7 @@
       justify-content: center; 
       align-items: center;
       transition: 0.3s ease-in-out;
-
+      cursor: pointer;
       a{
       font-size: 12px;
       font-weight: 700;
@@ -26,12 +31,13 @@
       text-transform: uppercase;
       text-align: center;
       font-family: Arial, Helvetica, sans-serif;
-     
+      transition: 0.3s ease-in-out;
 
-      }
-      &:hover{
-        background-color: darken( #558063, 10%);
-      }
+    }
+    &:hover a{
+     color: lightgrey;
+    }
+  
     
     }
     .avtor{
@@ -479,5 +485,152 @@
   }
   
 }
+@media (max-width: 768px) {
+  .top {
+    h1 {
+      font-size: 24px;
+    }
 
+    .shop_btn {
+      width: 150px;
+      height: 30px;
+      a {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .center {
+    height: 300px;
+  }
+
+  .bottom {
+    p {
+      font-size: 14px;
+    }
+
+    h3 {
+      font-size: 12px;
+    }
+  }
+
+  .right-part, .instagram, .last {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .top {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    h1 {
+      font-size: 20px;
+    }
+
+    .shop_btn {
+      width: 120px;
+      height: 25px;
+      a {
+        font-size: 9px;
+      }
+    }
+  }
+
+  .center {
+    height: auto;
+  }
+
+  .bottom {
+    p {
+      font-size: 12px;
+    }
+
+    h3 {
+      font-size: 10px;
+    }
+  }
+
+  .recent h1 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .top {
+    h1 {
+      font-size: 24px;
+    }
+
+    .shop_btn {
+      width: 150px;
+      height: 30px;
+
+      a {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .center {
+    height: 300px;
+  }
+
+  .bottom {
+    p {
+      font-size: 14px;
+    }
+
+    h3 {
+      font-size: 12px;
+    }
+  }
+
+  .right-part,
+  .instagram,
+  .last {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .top {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    h1 {
+      font-size: 20px;
+    }
+
+    .shop_btn {
+      width: 120px;
+      height: 25px;
+
+      a {
+        font-size: 9px;
+      }
+    }
+  }
+
+  .center {
+    height: auto; 
+  }
+
+  .bottom {
+    p {
+      font-size: 12px;
+    }
+
+    h3 {
+      font-size: 10px;
+    }
+  }
+
+  .recent h1 {
+    font-size: 14px;
+  }
+
+  .instagram h1 {
+    font-size: 14px;
+  }
+}
 }

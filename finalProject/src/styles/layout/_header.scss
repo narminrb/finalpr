@@ -155,5 +155,10 @@
   }
 
 }
+@media (max-width: 768px) {
+  #topnav, .container-fluid, .row, .col-xl-3, .col-md-6, .col-sm-12 {
+    display: none !important;
+  }
+}
 
 }

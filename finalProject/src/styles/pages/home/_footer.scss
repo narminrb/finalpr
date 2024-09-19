@@ -150,6 +150,11 @@
 .footwords{
   @include Flexible(center, flex-start, column,wrap,15px);
   margin-top: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  &:hover h1{
+    color: #333333;
+  }
   h1{
     font-size: 15px;
     font-weight: 600;
@@ -160,6 +165,78 @@
     font-size: 13px;
     color: #838383;
     line-height: 1.3;
+    &:hover{
+      color: #333333;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  #footer .logcont, #footer .recent {
+    @include Flexible(center, center, row, wrap, 15px);
+  }
+}
+@media (max-width: 992px) {
+  .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .logcont {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  .col-lg-6, .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .recent {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .footwords {
+    margin-top: 20px;
+  }
+
+  .logos {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logcont, .recent, .footwords {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footwords h3 {
+    font-size: 12px;
+  }
+
+  .sum {
+    align-items: center;
+  }
+
+  .item p {
+    text-align: center;
+  }
+
+  .recent h1, .footwords h1 {
+    font-size: 14px;
+  }
+
+  .recent .img h2 {
+    font-size: 12px;
+  }
+
+  .recent .img p {
+    font-size: 10px;
+  }
+
+  .logos {
+    max-width: 120px;
   }
 }
 

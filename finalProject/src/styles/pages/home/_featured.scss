@@ -1,50 +1,82 @@
-#featured{
+#featured {
   font-family: $base_font;
   padding: 80px;
   box-sizing: border-box;
+  
+  @media (max-width: 576px) {
+    padding: 20px; 
+    
+    .head-featured h1 {
+      font-size: 22px;
+    }
 
-  .head-featured{
-    @include Flexible(center, center, column, wrap, 0);
+    .head-featured h2 {
+      font-size: 14px;
+    }
+
+    .furniture h1, .category h1 {
+      font-size: 18px; 
+    }
+
+    .furniture h2, .category h2 {
+      font-size: 12px; 
+    }
+  }
+
+  .head-featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     margin-bottom: 30px;
-    h3{
+    
+    h3 {
       font-size: 14px;
       color: #a5a5a5;
       margin-bottom: 10px;
     }
-    h1{
+
+    h1 {
       font-size: 26px;
       color: #242424;
       line-height: 1.4;
       font-weight: 600;
       margin-bottom: 10px;
     }
-    h2{
+
+    h2 {
       font-size: 16px;
       color: #767676;
     }
   }
-  .furniture{
+
+  .furniture {
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
-    &:hover h1{
+    margin-bottom: 25px; 
+    
+    &:hover h1 {
       bottom: 55px;
     }
-    &:hover h2{
+    &:hover h2 {
       bottom: 30px;
       opacity: 1;
     }
-    img{
+
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: 0.5s ease-in-out;
-      &:hover{
+      
+      &:hover {
         transform: scale(1.1);
       }
     }
-    h1{
+
+    h1 {
       position: absolute;
       color: #333333;
       text-transform: uppercase;
@@ -56,7 +88,8 @@
       z-index: 100;
       transition: 0.3s ease-in-out;
     }
-    h2{
+
+    h2 {
       position: absolute;
       color: #a5a5a5;
       font-size: 13px;
@@ -68,33 +101,36 @@
     }
   }
 
-.first-col {
-  margin-bottom: 25px; 
-}
+  .first-col {
+    margin-bottom: 25px;
+  }
 
-  .category{
+  .category {
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
-    &:hover h1{
+
+    &:hover h1 {
       bottom: 50px;
     }
-    &:hover h2{
+    &:hover h2 {
       bottom: 25px;
       opacity: 1;
     }
-    img{
+
+    img {
       width: 100%;
       height: 100%;
-      overflow: hidden;
       object-fit: cover;
       transition: 0.5s ease-in-out;
-      &:hover{
+
+      &:hover {
         transform: scale(1.1);
       }
     }
-    h1{
+
+    h1 {
       position: absolute;
       color: #333333;
       text-transform: uppercase;
@@ -106,7 +142,8 @@
       z-index: 100;
       transition: 0.3s ease-in-out;
     }
-    h2{
+
+    h2 {
       position: absolute;
       color: #a5a5a5;
       font-size: 13px;
@@ -117,8 +154,4 @@
       opacity: 0;
     }
   }
-
-
-    
-  
 }

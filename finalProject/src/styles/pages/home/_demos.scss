@@ -49,6 +49,7 @@
       }
     }
   }
+
   .images{
     @include Flexible(center,center,row, wrap ,5px);
    img{

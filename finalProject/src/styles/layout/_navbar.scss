@@ -194,9 +194,8 @@
         }
       }
       .shop{
-        @include Flexible(flex-start, flex-start,column, wrap, 5px);
-        position: relative;
-        transition: 0.9s ease-in-out;
+        @include Flexible(flex-start, flex-start,column, wrap, 0px);
+        position: relative;      
         .shop-menu{
           @include Flexible(flex-start, flex-start,row, wrap,80px);
           position: absolute;
@@ -207,13 +206,13 @@
           height: 485px;
           z-index: 1000;
           opacity: 0;
-          visibility: hidden;
-          transition: 0.9s ease-in-out;
+          visibility: hidden;       
+          transition: 0.7s ease-in-out; 
           .shop-ul{
             gap: 0;
             width: 100%;            
             height: auto;
-            transition: 0.7s ease-in-out;
+            
             li{
               width: 100%;
               height: 100%;
@@ -234,7 +233,7 @@
               position: relative;
               width: 100%;
               padding: 20px 15px;
-              transition: 0.5s ease-in-out;
+              
               a{
                 width: 100%;
                 color: #fff;
@@ -494,7 +493,7 @@
               position: relative;
               width: 100%;
               padding: 20px 15px;
-              transition: 0.5s ease-in-out;
+             
               a{
                 width: 100%;
                 color: #fff;
@@ -733,7 +732,7 @@
               position: relative;
               width: 100%;
               padding: 20px 15px;
-              transition: 0.5s ease-in-out;
+              
               a{
                 width: 100%;
                 color: #fff;
@@ -1057,7 +1056,7 @@
               position: relative;
               width: 100%;
               padding: 20px 15px;
-              transition: 0.5s ease-in-out;
+             
               a{
                 width: 100%;
                 color: #fff;
@@ -1378,6 +1377,11 @@
           }
         }
         &:hover .shop-menu {
+          opacity: 1;
+          visibility: visible;
+          
+        }
+        &:hover .page-menu {
           opacity: 1;
           visibility: visible;
         }

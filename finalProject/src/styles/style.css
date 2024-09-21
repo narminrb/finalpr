@@ -4669,7 +4669,7 @@ table {
 #product .best-sellers .sales:hover h1 {
   color: #333333;
 }
-#product .col-xl-3, #product .col-md-6, #product .col-sm-12 {
+#product .card-cols {
   margin: 0;
   padding: 0;
   display: flex;

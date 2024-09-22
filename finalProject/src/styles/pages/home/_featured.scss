@@ -1,25 +1,25 @@
 #featured {
   font-family: $base_font;
-  padding: 5vw; // Scaled padding for responsiveness
+  padding: 5vw; 
   box-sizing: border-box;
   
   @media (max-width: 576px) {
     padding: 20px; 
 
     .head-featured h1 {
-      font-size: 1.375rem; // equivalent to 22px
+      font-size: 1.375rem; 
     }
 
     .head-featured h2 {
-      font-size: 0.875rem; // equivalent to 14px
+      font-size: 0.875rem; 
     }
 
     .furniture h1, .category h1 {
-      font-size: 1.125rem; // equivalent to 18px
+      font-size: 1.125rem;
     }
 
     .furniture h2, .category h2 {
-      font-size: 0.75rem; // equivalent to 12px
+      font-size: 0.75rem; 
     }
   }
 
@@ -27,19 +27,19 @@
     padding: 40px;
 
     .head-featured h1 {
-      font-size: 2rem; // equivalent to 32px for tablets
+      font-size: 2rem; 
     }
 
     .head-featured h2 {
-      font-size: 1.125rem; // equivalent to 18px for tablets
+      font-size: 1.125rem; 
     }
 
     .furniture h1, .category h1 {
-      font-size: 1.5rem; // equivalent to 24px
+      font-size: 1.5rem; 
     }
 
     .furniture h2, .category h2 {
-      font-size: 1rem; // equivalent to 16px
+      font-size: 1rem; 
     }
   }
 
@@ -48,16 +48,16 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 3vw; // Scaled margin for responsiveness
+    margin-bottom: 3vw; 
     
     h3 {
-      font-size: 0.875rem; // equivalent to 14px
+      font-size: 0.875rem;
       color: #a5a5a5;
       margin-bottom: 10px;
     }
 
     h1 {
-      font-size: 1.625rem; // equivalent to 26px
+      font-size: 1.625rem; 
       color: #242424;
       line-height: 1.4;
       font-weight: 600;
@@ -65,7 +65,7 @@
     }
 
     h2 {
-      font-size: 1rem; // equivalent to 16px
+      font-size: 1rem; 
       color: #767676;
     }
   }
@@ -75,10 +75,9 @@
     height: auto;
     overflow: hidden;
     position: relative;
-    margin-bottom: 2.5vw; // Scaled margin for responsiveness 
 
     &:hover h1 {
-      bottom: 3.5vw; // Scaled movement for hover effect
+      bottom: 3.5vw; 
     }
     &:hover h2 {
       bottom: 2vw;
@@ -102,7 +101,7 @@
       text-transform: uppercase;
       line-height: 1.4;
       font-weight: 500;
-      font-size: 1.25rem; // equivalent to 20px
+      font-size: 1.25rem; 
       bottom: 20px;
       left: 20px;
       z-index: 100;
@@ -112,7 +111,57 @@
     h2 {
       position: absolute;
       color: #a5a5a5;
-      font-size: 0.8125rem; // equivalent to 13px
+      font-size: 0.8125rem; 
+      bottom: 0;
+      left: 20px;
+      z-index: 100;
+      transition: 0.5s ease;
+      opacity: 0;
+    }
+  }
+  .category1{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+
+    &:hover h1 {
+      bottom: 3.5vw; 
+    }
+    &:hover h2 {
+      bottom: 2vw;
+      opacity: 1;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.5s ease-in-out;
+      
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    h1 {
+      position: absolute;
+      color: #333333;
+      text-transform: uppercase;
+      line-height: 1.4;
+      font-weight: 500;
+      font-size: 1.25rem; 
+      bottom: 20px;
+      left: 20px;
+      z-index: 100;
+      transition: 0.3s ease-in-out;
+    }
+
+    h2 {
+      position: absolute;
+      color: #a5a5a5;
+      font-size: 0.8125rem; 
       bottom: 0;
       left: 20px;
       z-index: 100;
@@ -121,14 +170,13 @@
     }
   }
 
-  // Grid layout for larger screens
   @media (min-width: 769px) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
 
     .furniture, .category {
-      margin-bottom: 0; // Remove bottom margins for grid items
+      margin-bottom: 0; 
     }
 
     .first-col {

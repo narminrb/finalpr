@@ -5135,6 +5135,122 @@ table {
   opacity: 1;
   transform: translateY(0);
 }
+@media (max-width: 1200px) {
+  #product .card-container {
+    width: 270px;
+    height: 370px;
+  }
+  #product .card-container .main-card .img-box1 {
+    height: 250px;
+  }
+  #product .card-container .words h1 {
+    font-size: 12px;
+  }
+  #product .card-container .words h2 {
+    font-size: 12px;
+  }
+  #product .card-container .words p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 992px) {
+  #product .best-sellers {
+    flex-direction: column;
+    text-align: center;
+  }
+  #product .card-container {
+    width: 230px;
+    height: 330px;
+  }
+  #product .card-container .main-card .img-box1 {
+    height: 210px;
+  }
+  #product .card-container .words h1 {
+    font-size: 11px;
+  }
+  #product .card-container .words h2 {
+    font-size: 11px;
+  }
+  #product .card-container .words p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  #product .best-sellers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  #product .card-container {
+    width: 200px;
+    height: 300px;
+  }
+  #product .card-container .main-card .img-box1 {
+    height: 180px;
+  }
+  #product .card-container .words h1 {
+    font-size: 10px;
+  }
+  #product .card-container .words h2 {
+    font-size: 10px;
+  }
+  #product .card-container .words p {
+    font-size: 9px;
+  }
+}
+@media (max-width: 576px) {
+  #product .head-featured h1 {
+    font-size: 20px;
+  }
+  #product .head-featured h2 {
+    font-size: 14px;
+  }
+  #product .best-sellers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #product .card-container {
+    width: 160px;
+    height: 250px;
+  }
+  #product .card-container .main-card .img-box1 {
+    height: 150px;
+  }
+  #product .card-container .words h1 {
+    font-size: 9px;
+  }
+  #product .card-container .words h2 {
+    font-size: 9px;
+  }
+  #product .card-container .words p {
+    font-size: 8px;
+  }
+}
+@media (max-width: 400px) {
+  #product .card-container {
+    width: 140px;
+    height: 220px;
+  }
+  #product .card-container .main-card .img-box1 {
+    height: 130px;
+  }
+  #product .card-container .words h1 {
+    font-size: 8px;
+  }
+  #product .card-container .words h2 {
+    font-size: 8px;
+  }
+  #product .card-container .words p {
+    font-size: 7px;
+  }
+}
 
 #map {
   box-sizing: border-box;

@@ -1,45 +1,47 @@
-#brandss{
+#brandss {
   padding: 15px 0;
-  background-color: #F9F9F9;
-  .eachbrand{
-    @include Flexible(center,center,row, wrap,10px);
+  background-color: #f9f9f9;
+
+  .eachbrand {
+    @include Flexible(center, center, row, wrap, 10px);
     padding: 20px 0;
-    width: 198px;
-    height: 90px;
+    width: 12.375rem; 
+    height: 5.625rem; 
     cursor: pointer;
-    &:hover img{
+
+    &:hover img {
       opacity: 1;
     }
-    img{
-     width: 108px;
-     height: 60px;
+
+    img {
+      width: 6.75rem; 
+      height: 3.75rem; 
       object-fit: cover;
       opacity: 0.6;
-      transition: 0.3s ease-in-out;
-      
+      transition: opacity 0.3s ease-in-out;
     }
-
   }
+
   @media (max-width: 768px) {
     .eachbrand {
-      width: 150px;  
-      height: 70px;
-      
+      width: 9.375rem; 
+      height: 4.375rem; 
+
       img {
-        width: 80px;  
-        height: 45px;  
+        width: 5rem;
+        height: 2.8125rem; 
       }
     }
   }
 
   @media (max-width: 480px) {
     .eachbrand {
-      width: 120px;  
-      height: 60px;  
-      
+      width: 7.5rem; 
+      height: 3.75rem; 
+
       img {
-        width: 70px; 
-        height: 40px;  
+        width: 4.375rem; 
+        height: 2.5rem; 
       }
     }
   }

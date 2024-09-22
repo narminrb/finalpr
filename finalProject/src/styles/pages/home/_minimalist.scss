@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 .cont{
   cursor: pointer;
   .top{
@@ -591,7 +592,22 @@
     width: 90%;
   }
 }
+@media (min-width: 768px) {
+  .tp, .cen, .bot {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
+@media (max-width: 767px) {
+  .tp, .cen, .bot {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .tp, .cen, .bot {
+    grid-template-columns: 1fr;
+  }
 @media (max-width: 480px) {
   .top {
     margin-top: 20px;
@@ -632,5 +648,6 @@
   .instagram h1 {
     font-size: 14px;
   }
+}
 }
 }

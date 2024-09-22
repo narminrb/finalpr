@@ -2373,7 +2373,7 @@ table {
 
 #featured {
   font-family: "Poppins", sans-serif;
-  padding: 80px;
+  padding: 5vw;
   box-sizing: border-box;
 }
 @media (max-width: 576px) {
@@ -2381,16 +2381,33 @@ table {
     padding: 20px;
   }
   #featured .head-featured h1 {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
   #featured .head-featured h2 {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   #featured .furniture h1, #featured .category h1 {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   #featured .furniture h2, #featured .category h2 {
-    font-size: 12px;
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  #featured {
+    padding: 40px;
+  }
+  #featured .head-featured h1 {
+    font-size: 2rem;
+  }
+  #featured .head-featured h2 {
+    font-size: 1.125rem;
+  }
+  #featured .furniture h1, #featured .category h1 {
+    font-size: 1.5rem;
+  }
+  #featured .furniture h2, #featured .category h2 {
+    font-size: 1rem;
   }
 }
 #featured .head-featured {
@@ -2398,117 +2415,82 @@ table {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 3vw;
 }
 #featured .head-featured h3 {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #a5a5a5;
   margin-bottom: 10px;
 }
 #featured .head-featured h1 {
-  font-size: 26px;
+  font-size: 1.625rem;
   color: #242424;
   line-height: 1.4;
   font-weight: 600;
   margin-bottom: 10px;
 }
 #featured .head-featured h2 {
-  font-size: 16px;
+  font-size: 1rem;
   color: #767676;
 }
-#featured .furniture {
+#featured .furniture, #featured .category {
   width: 100%;
-  height: 100%;
+  height: auto;
   overflow: hidden;
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 2.5vw;
 }
-#featured .furniture:hover h1 {
-  bottom: 55px;
+#featured .furniture:hover h1, #featured .category:hover h1 {
+  bottom: 3.5vw;
 }
-#featured .furniture:hover h2 {
-  bottom: 30px;
+#featured .furniture:hover h2, #featured .category:hover h2 {
+  bottom: 2vw;
   opacity: 1;
 }
-#featured .furniture img {
+#featured .furniture img, #featured .category img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.5s ease-in-out;
 }
-#featured .furniture img:hover {
+#featured .furniture img:hover, #featured .category img:hover {
   transform: scale(1.1);
 }
-#featured .furniture h1 {
+#featured .furniture h1, #featured .category h1 {
   position: absolute;
   color: #333333;
   text-transform: uppercase;
   line-height: 1.4;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   bottom: 20px;
   left: 20px;
   z-index: 100;
   transition: 0.3s ease-in-out;
 }
-#featured .furniture h2 {
+#featured .furniture h2, #featured .category h2 {
   position: absolute;
   color: #a5a5a5;
-  font-size: 13px;
+  font-size: 0.8125rem;
   bottom: 0;
   left: 20px;
   z-index: 100;
   transition: 0.5s ease;
   opacity: 0;
 }
-#featured .first-col {
-  margin-bottom: 25px;
-}
-#featured .category {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-#featured .category:hover h1 {
-  bottom: 50px;
-}
-#featured .category:hover h2 {
-  bottom: 25px;
-  opacity: 1;
-}
-#featured .category img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: 0.5s ease-in-out;
-}
-#featured .category img:hover {
-  transform: scale(1.1);
-}
-#featured .category h1 {
-  position: absolute;
-  color: #333333;
-  text-transform: uppercase;
-  line-height: 1.4;
-  font-weight: 500;
-  font-size: 20px;
-  bottom: 20px;
-  left: 20px;
-  z-index: 100;
-  transition: 0.3s ease-in-out;
-}
-#featured .category h2 {
-  position: absolute;
-  color: #a5a5a5;
-  font-size: 13px;
-  bottom: 0;
-  left: 20px;
-  z-index: 100;
-  transition: 0.4s ease;
-  opacity: 0;
+@media (min-width: 769px) {
+  #featured {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+  }
+  #featured .furniture, #featured .category {
+    margin-bottom: 0;
+  }
+  #featured .first-col {
+    margin-bottom: 0;
+  }
 }
 
 #products {
